@@ -347,7 +347,6 @@ body.no-scroll {
   .review-card:not(:last-child) {
     margin-bottom: 20px;
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -369,6 +368,9 @@ body.no-scroll {
   .review-card {
     margin-bottom: 0px;
     flex-basis: calc((100% - 10px * 2) / 3);
+  }
+  .thank-main{
+    max-width: 600px;
   }
 }
 
