@@ -190,10 +190,12 @@ body.no-scroll {
   gap: 10px;
   align-items: first baseline;
 }
-.about-list-item:hover svg {
+.about-list-item:hover svg,
+.about-list-item:focus svg  {
   fill: #007bff;
 }
-.about-list-item:hover h3 {
+.about-list-item:hover h3,
+.about-list-item:focus h3 {
   color: #007bff;
 }
 
