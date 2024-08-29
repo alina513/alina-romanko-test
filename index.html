@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardiotensive</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
+      integrity="sha512-3axTZ/bKFZH5/qLFTl4U+mDbBDFW+5QO5L7D1HnOhlhJbcNDIVJxoNm6It77g0eUdzfKZlHirayqRC2qJaAOJw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="logo">
+        <p>Cardiotensive</p>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links" data-menu>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" data-menu-button aria-expanded="false">
+          <svg width="20" height="20">
+            <use href="./images/icons.svg#icon-open" class="use-open"></use>
+            <use href="./images/icons.svg#icon-close" class="use-close"></use>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Banner Section -->
+<main>
+    <section class="banner">
+      <div class="banner-content">
+        <img src="./images/bg.png" alt="Cardiotensive" class="product-image" />
+        <div class="product-description">
+          <h1>Support Your Cardiovascular Health</h1>
+          <p>
+            Cardiotensive helps to maintain a healthy heart and blood vessels,
+            and is designed to combat hypertension.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="about">
+      <h2 class="section-title">Advantages</h2>
+      <ul class="about-list">
+        <li class="about-list-item">
+          <svg width="15" height="11">
+            <use href="./images/icons.svg#icon-leaf"></use>
+          </svg>
+          <div>
+            <h3>Natural Ingredients</h3>
+            <p>Made with high-quality, natural ingredients.</p>
+          </div>
+        </li>
+        <li class="about-list-item">
+          <svg width="20" height="11">
+            <use href="./images/icons.svg#icon-heart"></use>
+          </svg>
+          <div>
+            <h3>Supports Heart Health</h3>
+            <p>Helps to maintain a healthy heart and reduce blood pressure.</p>
+          </div>
+        </li>
+        <li class="about-list-item">
+          <svg width="13" height="11">
+            <use href="./images/icons.svg#icon-glass"></use>
+          </svg>
+          <div>
+            <h3>Easy to Use</h3>
+            <p>Simply take as directed to see results.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Reviews Section -->
+
+    <section id="reviews" class="reviews">
+      <h2 class="section-title">Reviews</h2>
+      <ul class="reviews-list">
+        <li class="review-card">
+          <img
+            src="./images/view1.jpg"
+            alt="User 1"
+            srcset="./images/view1.jpg 1x, ./images/view1-2x.jpg 2x"
+          />
+          <h4>John Doe</h4>
+          <p>
+            I've been using Cardiotensive for a few months, and it has really
+            helped me manage my blood pressure. Highly recommend!
+          </p>
+        </li>
+        <li class="review-card">
+          <img
+            src="./images/view2.jpg"
+            alt="User 2"
+            srcset="./images/view2.jpg 1x, ./images/view2-2x.jpg 2x"
+          />
+          <h4>Jane Smith</h4>
+          <p>
+            This product is fantastic! I feel much better knowing I'm supporting
+            my heart health naturally.
+          </p>
+        </li>
+        <li class="review-card">
+          <img
+            src="./images/view3.jpg"
+            alt="User 3"
+            srcset="./images/view3.jpg 1x, ./images/view3-2x.jpg 2x"
+          />
+          <h4>Emily Johnson</h4>
+          <p>
+            Cardiotensive has been a game changer for me. My energy levels have
+            improved, and my blood pressure is stable.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contacts</h2>
+      <form action="thankyou.html" method="post" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </section>
+    <script type="module" src="./js/mobile-menu.js"></script>
+    <script type="module" src="./js/form.js"></script>
+</main>
+  </body>
+</html>
