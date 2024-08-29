@@ -75,6 +75,41 @@ body.no-scroll {
   border: 1px solid #007bff;
 }
 
+.wrapper-svg{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.button-svg{
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    align-self: baseline;
+}
+.pocket{
+    transition: transform 1000ms linear;
+}
+.ok{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    transform: translateY(-40px);
+    transition: transform 1000ms linear;
+}
+
+
+.button-svg:hover .pocket,
+.button-svg:focus .pocket{
+    transform: translateY(-40px);
+}
+.button-svg:hover .ok,
+.button-svg:focus .ok{
+    transform: translateY(-10px);
+}
+
 /* Header */
 .header {
   position: relative;
