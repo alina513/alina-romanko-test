@@ -19,6 +19,7 @@
   const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".nav-links");
   const navLinksItems = document.querySelectorAll(".nav-links a");
+  console.dir(navLinksItems);
 
   hamburger.addEventListener("click", () => {
     const isOpen = hamburger.classList.toggle("is-open");
